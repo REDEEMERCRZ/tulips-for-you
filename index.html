@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#09070a">
+  <meta name="description" content="A sealed love letter and a bouquet of ASCII tulips.">
+  <title>Tulips For You</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' text-anchor='middle' font-size='26' fill='%23ed9ec3'%3E%E2%99%A1%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="correspondence" data-state="envelope" aria-label="A gift for you">
+    <div class="letter-sparks" aria-hidden="true"></div>
+    <div class="envelope-scene">
+      <h1 id="envelope-greeting">I have something for you ♡</h1>
+      <div class="envelope">
+        <svg class="envelope-back" viewBox="0 0 440 276" aria-hidden="true">
+          <defs>
+            <linearGradient id="env-lining" x2=".35" y2="1" gradientUnits="objectBoundingBox">
+              <stop class="env-deep"/><stop class="env-base" offset="1"/>
+            </linearGradient>
+          </defs>
+          <rect x="1" y="1" width="438" height="274" rx="11" fill="url(#env-lining)" stroke="#fff2f5" stroke-opacity=".48"/>
+          <path d="M9 47H431 M9 52H431" fill="none" stroke="#fff2f5" stroke-opacity=".19"/>
+        </svg>
+        <div class="paper envelope-insert" aria-hidden="true"></div>
+        <svg class="envelope-pocket" viewBox="0 0 440 276" aria-hidden="true">
+          <defs>
+            <linearGradient id="env-left" x2="1" y2=".72">
+              <stop class="env-light"/><stop class="env-base" offset="1"/>
+            </linearGradient>
+            <linearGradient id="env-right" x1="1" y1=".28" x2="0" y2=".9">
+              <stop class="env-light"/><stop class="env-base" offset="1"/>
+            </linearGradient>
+            <linearGradient id="env-front" x1=".15" y1="0" x2=".62" y2="1">
+              <stop class="env-light"/><stop class="env-base" offset="1"/>
+            </linearGradient>
+          </defs>
+          <path d="M1 9Q1 4 5 7L246 160 12 275Q1 275 1 264Z" fill="url(#env-left)"/>
+          <path d="M439 9Q439 4 435 7L194 160 428 275Q439 275 439 264Z" fill="url(#env-right)"/>
+          <path d="M6 267 200 144Q220 130 240 144L434 267Q440 275 423 275H17Q2 275 6 267Z" fill="url(#env-front)" stroke="#7d344d" stroke-opacity=".23"/>
+          <path d="M12 265 202 148Q220 135 238 148L428 265" fill="none" stroke="#fff6f7" stroke-opacity=".62"/>
+        </svg>
+        <div class="envelope-flap" aria-hidden="true">
+          <svg viewBox="0 0 440 168" class="flap-outside">
+            <defs>
+              <linearGradient id="env-top" x1=".1" y1="0" x2=".65" y2="1">
+                <stop class="env-light"/><stop class="env-base" offset=".67"/><stop class="env-light" offset="1"/>
+              </linearGradient>
+            </defs>
+            <path d="M1 12Q1 1 13 1H427Q439 1 439 12L244 151Q220 169 196 151Z" fill="url(#env-top)" stroke="#fff5f8" stroke-opacity=".57"/>
+            <path d="M15 15 201 148Q220 162 239 148L425 15" fill="none" stroke="#fff8fa" stroke-opacity=".54"/>
+          </svg>
+          <svg viewBox="0 0 440 168" class="flap-inside">
+            <defs>
+              <linearGradient id="env-inner-fold" x1=".16" y1="0" x2=".75" y2="1">
+                <stop class="env-deep"/><stop class="env-base" offset="1"/>
+              </linearGradient>
+            </defs>
+            <g transform="translate(0 168) scale(1 -1)">
+              <path d="M1 12Q1 1 13 1H427Q439 1 439 12L244 151Q220 169 196 151Z" fill="url(#env-inner-fold)" stroke="#fff0f5" stroke-opacity=".46"/>
+              <path d="M9 10H431" fill="none" stroke="#6b3046" stroke-opacity=".24"/>
+            </g>
+          </svg>
+        </div>
+        <svg class="envelope-seal" viewBox="0 0 80 74" aria-hidden="true">
+          <defs>
+            <linearGradient id="seal-wax" x1=".16" y1=".08" x2=".72" y2="1">
+              <stop class="seal-light"/><stop class="seal-base" offset=".42"/><stop class="seal-deep" offset="1"/>
+            </linearGradient>
+          </defs>
+          <path d="M40 69C33 67 10 51 5 34-1 15 11 5 23 5c7 0 13 3 17 10 5-6 10-10 18-10 13 0 23 12 17 30-5 15-27 31-35 34Z" fill="url(#seal-wax)" stroke="#582238" stroke-opacity=".45"/>
+          <path d="M39 62C32 58 13 45 11 31 8 17 16 10 24 11c7 0 12 5 16 11 4-6 10-11 17-11 10 0 17 8 13 22-3 12-23 26-31 29Z" fill="none" stroke="#ffe5ec" stroke-opacity=".55" stroke-width="1.3"/>
+          <path d="M40 50c-2-1-14-9-14-16 0-4 3-7 7-7 3 0 6 2 7 5 1-3 4-5 7-5 4 0 7 3 7 7 0 7-12 15-14 16Z" fill="none" stroke="#5b263b" stroke-opacity=".6" stroke-width="2"/>
+          <path d="M40 48c-2-1-13-8-13-14 0-3 3-6 6-6 3 0 6 2 7 5 1-3 4-5 7-5 3 0 6 3 6 6 0 6-11 13-13 14Z" fill="none" stroke="#ffe6ed" stroke-opacity=".67" stroke-width="1.1"/>
+        </svg>
+        <button id="open-envelope" type="button" aria-labelledby="envelope-instruction" disabled></button>
+      </div>
+      <p id="envelope-instruction">Tap to open</p>
+      <noscript><p class="no-script">Enable JavaScript to open your envelope.</p></noscript>
+    </div>
+
+    <article class="paper love-letter" aria-label="Love letter" tabindex="-1" hidden inert>
+      <div class="letter-ornament" aria-hidden="true"><span>♡</span></div>
+      <div class="letter-reading" tabindex="0" role="region" aria-label="Letter message">
+        <div id="letter-accessible" class="sr-only"></div>
+        <div id="letter-visual" class="typed" aria-hidden="true"></div>
+      </div>
+      <footer class="letter-footer">
+        <button id="finish-letter" type="button">Finish typing</button>
+        <button id="open-surprise" type="button" hidden>I LOVE YOU BABY KO♡</button>
+      </footer>
+    </article>
+  </main>
+
+  <div class="surprise-transition" aria-hidden="true" hidden></div>
+
+  <main class="gift" tabindex="-1" hidden inert>
+    <div class="stage">
+      <canvas id="bouquet" role="img" aria-label="Seven pink, lavender, and white ASCII tulips wrapped in paper and held by a little rabbit."></canvas>
+    </div>
+
+    <section class="dedication" aria-labelledby="title">
+      <h1 id="title">
+        <span class="sr-only" id="title-accessible">I LOVE YOU ♡</span>
+        <span id="title-visual" class="typed" aria-hidden="true">I LOVE YOU ♡</span>
+      </h1>
+      <button id="replay" type="button" aria-label="Replay the bouquet animation" hidden>
+        <span class="replay-icon" aria-hidden="true">↻</span> Replay
+      </button>
+      <span id="announcement" class="sr-only" role="status"></span>
+    </section>
+    <button id="back-to-envelope" type="button" hidden>Back to the beginning ♡</button>
+  </main>
+  <canvas id="effects" aria-hidden="true"></canvas>
+</body>
+</html>
